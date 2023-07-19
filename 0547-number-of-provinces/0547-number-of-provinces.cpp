@@ -4,7 +4,7 @@ public:
         if(visit[n] == 1) return;
         visit[n] = 1;
         for(int i=0; i<isConnected.size();i++){
-            if(isConnected[n][i]==1) DFS(isConnected, visit, i);
+            if(isConnected[n][i]==1 && visit[i] == 0) DFS(isConnected, visit, i);
         }
     }
     int findCircleNum(vector<vector<int>>& isConnected) {
