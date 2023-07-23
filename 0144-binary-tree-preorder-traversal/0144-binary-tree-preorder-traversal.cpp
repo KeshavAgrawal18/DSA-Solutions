@@ -15,7 +15,9 @@ public:
         if(node==NULL) return ;
         
         ans.push_back(node->val);
+        if(node->left!=NULL)
         preorder(ans, node->left);
+        if(node->right!=NULL)
         preorder(ans, node->right);
         
     }
