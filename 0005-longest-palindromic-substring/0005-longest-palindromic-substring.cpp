@@ -7,7 +7,7 @@ public:
         bool p;
         string ans;
         for(int i=0; i<s.size(); i++ ){
-            for(int j=i; j<s.size(); j++){
+            for(int j=s.size(); j>=i; j--){
                 p = 1;
                 for(k=i; k<=(i+j)/2; k++){
                     if(s[k]!=s[j+i-k]){
