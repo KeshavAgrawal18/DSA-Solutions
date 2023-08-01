@@ -19,8 +19,6 @@ public:
             }
         }
         mx = max(cur, mx);
-        temp.clear();
-        cur = 0;
         return mx;    
     }
 };
