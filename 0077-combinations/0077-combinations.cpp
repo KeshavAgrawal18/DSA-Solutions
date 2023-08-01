@@ -4,6 +4,7 @@ public:
     vector<int> temp;
     int k, n;
     void fun(int start){
+        if(n-start+1+temp.size() < k) return;
         if(temp.size() == k){
           ans.push_back(temp);
             return;
